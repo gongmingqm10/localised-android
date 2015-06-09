@@ -36,7 +36,6 @@ android {
         }
     }
 }
-
 ```
 
 The project structure as belows:
@@ -65,7 +64,6 @@ Root
 				|--values 
 			|--AndroidManifest.xml
 	|--build.gradle
-
 ```
 
 `app/main` is the basic module for this project. Most of the logic will be located here. For the chinese and english flavors. We place the different part to the separate chinese and english package.
@@ -77,13 +75,11 @@ Build the Chinese Release version:
 
 ```
 ./gradlew assembleChineseRelease
-
 ```
 Build the English Release version:
 
 ```
 ./gradlew assembleEnglishRelease
-
 ```
 
 Finally, distribute different versions to different Android market. Sure you have to localise all strings in your project, it's good habit to place all strings in strings.xml.
